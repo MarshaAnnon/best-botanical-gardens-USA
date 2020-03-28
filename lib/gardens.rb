@@ -2,7 +2,7 @@ require "pry"
 
 #responsible for my fact methods
 
-class Garden
+class Gardens
 
     attr_accessor :title, :body
 
@@ -17,5 +17,11 @@ class Garden
     def self.all
         @@all
     end
-
+    
+    def self.display_garden_detail(garden)
+        all.each.with_index(1) do |brewery, i|
+        puts "#{i}. #{garden.title} && #{garden.body}"
+        end
+    end
 end
+
