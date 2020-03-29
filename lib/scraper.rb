@@ -1,7 +1,7 @@
 require "pry"
     #responsible for getting data from the website
     
-    TheActiveTimes_URL ="https://www.theactivetimes.com/travel/best-botanical-gardens-us-gallery"
+    TheActiveTimes_URL = "https://www.theactivetimes.com/travel/best-botanical-gardens-us-gallery"
     
     class Scraper
     
@@ -14,11 +14,6 @@ require "pry"
                 garden = Gardens.new(title, body)
             end   
         end 
-    
-        def self.scrape_garden_detail(garden)
-                html = open(TheActiveTimes_URL+garden)
-                doc = Nokogiri::HTML(html)
-        end
     end
 
 #open the url

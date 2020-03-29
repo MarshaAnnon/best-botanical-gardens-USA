@@ -19,10 +19,6 @@ class CLI
     def pick_garden
         puts "Please choose a number for more info on a Botanical Garden:"
         input = gets.chomp
-        #if !input.to_i.between?(1, Gardens.all.count)
-            #puts "Sorry, garden not found, please select another from the list"
-            #list_gardens
-            #pick_garden
         if garden = Gardens.all[input.to_i-1]
             puts "#{garden.title}, #{garden.body}"
             puts "Would you like to check out another garden?"
@@ -39,3 +35,9 @@ class CLI
     end
 
 end
+
+#need to figure out how to add this in for a more complete program
+#if !input.to_i.between?(1, Gardens.all.count)
+            #puts "Sorry, garden not found, please select another from the list"
+            #list_gardens
+            #pick_garden

@@ -1,6 +1,6 @@
 require "pry"
 
-#responsible for my fact methods
+#responsible for my holding my garden objects and all method
 
 class Gardens
 
