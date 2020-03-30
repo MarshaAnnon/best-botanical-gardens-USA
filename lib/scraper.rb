@@ -1,5 +1,5 @@
 require "pry"
-    #responsible for getting data from the website
+   
     
     TheActiveTimes_URL = "https://www.theactivetimes.com/travel/best-botanical-gardens-us-gallery"
     
@@ -16,6 +16,17 @@ require "pry"
         end 
     end
 
+
+
+
+
+
+
+
+
+
+
+ #responsible for getting data from the website
 #open the url
 #use Nokogiri to parse the url
 #loop through each of the elements and pull out the title and the body
